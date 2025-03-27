@@ -1,0 +1,98 @@
+/* styles.css */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #ffebee; /* Light red-pink background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container: Narrower and Longer */
+.container {
+  background: white;
+  width: 450px; /* Reduced width */
+  padding: 60px 40px; /* Increased vertical padding */
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+  color: #c20000; /* Bold red */
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Input container */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Input fields */
+input {
+  padding: 12px;
+  border: 2px solid #c20000; /* Bold red border */
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #8b0000; /* Darker red */
+  box-shadow: 0 0 8px rgba(194, 0, 0, 0.4);
+}
+
+/* Button styles */
+button {
+  padding: 12px;
+  background: linear-gradient(45deg, #c20000, #8b0000); /* Bold red gradient */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #8b0000, #610000); /* Darker red hover effect */
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Answer box */
+.answer-box {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #ffe0e0; /* Soft red background */
+  border-left: 6px solid #c20000; /* Bold red border */
+  color: #7a0000; /* Dark red text */
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.answer-box:hover {
+  transform: scale(1.02);
+}
